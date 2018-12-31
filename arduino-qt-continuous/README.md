@@ -26,6 +26,7 @@ If you do not have the NI-VISA installed, you need to install `pyvisa-py`
 In the command line:
 
     pip install pyvisa-py
+    pip install pyserial
     lantz config core.visa_backend '@py'
 
 
