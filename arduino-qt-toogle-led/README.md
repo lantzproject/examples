@@ -1,5 +1,5 @@
-arduino-qt-simple
-=================
+arduino-qt-toogle-led
+=====================
 
 This is a very simple example of how to build an instrument that communicates via
 exchanging text messages using arduino and lantz.
@@ -39,7 +39,7 @@ contains information to compile and upload the project.
 
 
 Step 2: Add your own code to the arduino sketch
-----------------------------------------------------------
+-----------------------------------------------
 
 You can customize the arduino code by editing `inodriver_user.cpp` and 
 `inodriver_user.h` within the sketch directory created in step 1. 
@@ -55,20 +55,20 @@ You will find the following functions:
 
 In order to get the onboard LED turned on an off, we need to modify the 
 `inodriver_user.cpp` file in the following manner:
-```Arduino
-...
+```
+... stuff ...
 void user_setup() {
-	pinMode(13, OUTPUT);
+   pinMode(13, OUTPUT);
 }
-...
+... stuff ...
 int set_LED(int value) {
-	if (value>0)
-		digitalWrite(13, HIGH);
-	else
-		digitalWrite(13, HIGH);
-  return 0;
+   if (value>0)
+      digitalWrite(13, HIGH);
+   else
+      digitalWrite(13, HIGH);
+   return 0;
 };
-...
+... stuff ...
 ```
 
 
