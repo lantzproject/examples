@@ -65,7 +65,7 @@ int set_LED(int value) {
    if (value>0)
       digitalWrite(13, HIGH);
    else
-      digitalWrite(13, HIGH);
+      digitalWrite(13, LOW);
    return 0;
 };
 ... stuff ...
